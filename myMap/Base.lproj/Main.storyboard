@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7E7-Ta-jH6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MyMapViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="MyMapViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="myMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="Pfk-9p-hcN">
+                                <rect key="frame" x="36" y="563" width="303" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6oa-XV-ZXd" userLabel="myMap">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6oa-XV-ZXd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ALT-tU-5vE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6oa-XV-ZXd" secondAttribute="bottom" id="IAL-hy-jTK"/>
+                            <constraint firstAttribute="trailing" secondItem="6oa-XV-ZXd" secondAttribute="trailing" id="JQV-vp-ufd"/>
+                            <constraint firstItem="6oa-XV-ZXd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RrP-g1-ifB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Pfk-9p-hcN" secondAttribute="bottom" constant="60" id="Swq-LZ-Jri"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pfk-9p-hcN" secondAttribute="trailing" constant="20" id="l6R-8X-jcf"/>
+                            <constraint firstItem="Pfk-9p-hcN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="pWv-gi-My6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="MyLocation" id="1rA-wI-fSv">
+                        <barButtonItem key="rightBarButtonItem" image="compass" id="7DN-tV-poK"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myMap" destination="6oa-XV-ZXd" id="YUn-WL-wNo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2015.2" y="138.98050974512745"/>
+        </scene>
+        <!--navMap-->
+        <scene sceneID="QbM-le-t5v">
+            <objects>
+                <navigationController title="navMap" automaticallyAdjustsScrollViewInsets="NO" id="7E7-Ta-jH6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yHM-Gf-f4M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7Pj-Ig-Xxb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aGy-bA-omp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="compass" width="27" height="28"/>
+    </resources>
+</document>

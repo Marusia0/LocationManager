@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "045850641F7EF7FD006FE721"
-               BuildableName = "LocationManager.app"
-               BlueprintName = "LocationManager"
-               ReferencedContainer = "container:LocationManager.xcodeproj">
+               BlueprintIdentifier = "7EDD45AD1F82C7D100A4C2D9"
+               BuildableName = "myMap.app"
+               BlueprintName = "myMap"
+               ReferencedContainer = "container:myMap.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,14 +28,34 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7EDD45C11F82C7D200A4C2D9"
+               BuildableName = "myMapTests.xctest"
+               BlueprintName = "myMapTests"
+               ReferencedContainer = "container:myMap.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7EDD45CC1F82C7D200A4C2D9"
+               BuildableName = "myMapUITests.xctest"
+               BlueprintName = "myMapUITests"
+               ReferencedContainer = "container:myMap.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "045850641F7EF7FD006FE721"
-            BuildableName = "LocationManager.app"
-            BlueprintName = "LocationManager"
-            ReferencedContainer = "container:LocationManager.xcodeproj">
+            BlueprintIdentifier = "7EDD45AD1F82C7D100A4C2D9"
+            BuildableName = "myMap.app"
+            BlueprintName = "myMap"
+            ReferencedContainer = "container:myMap.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "045850641F7EF7FD006FE721"
-            BuildableName = "LocationManager.app"
-            BlueprintName = "LocationManager"
-            ReferencedContainer = "container:LocationManager.xcodeproj">
+            BlueprintIdentifier = "7EDD45AD1F82C7D100A4C2D9"
+            BuildableName = "myMap.app"
+            BlueprintName = "myMap"
+            ReferencedContainer = "container:myMap.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "045850641F7EF7FD006FE721"
-            BuildableName = "LocationManager.app"
-            BlueprintName = "LocationManager"
-            ReferencedContainer = "container:LocationManager.xcodeproj">
+            BlueprintIdentifier = "7EDD45AD1F82C7D100A4C2D9"
+            BuildableName = "myMap.app"
+            BlueprintName = "myMap"
+            ReferencedContainer = "container:myMap.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
