@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7E7-Ta-jH6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7E7-Ta-jH6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -41,9 +41,7 @@
                             <constraint firstItem="Pfk-9p-hcN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="pWv-gi-My6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="MyLocation" id="1rA-wI-fSv">
-                        <barButtonItem key="rightBarButtonItem" image="compass" id="7DN-tV-poK"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="1rA-wI-fSv"/>
                     <connections>
                         <outlet property="myMap" destination="6oa-XV-ZXd" id="YUn-WL-wNo"/>
                     </connections>
@@ -55,6 +53,7 @@
         <!--navMap-->
         <scene sceneID="QbM-le-t5v">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aGy-bA-omp" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController title="navMap" automaticallyAdjustsScrollViewInsets="NO" id="7E7-Ta-jH6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yHM-Gf-f4M">
@@ -70,12 +69,8 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7Pj-Ig-Xxb"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aGy-bA-omp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1238" y="139"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="compass" width="27" height="28"/>
-    </resources>
 </document>
